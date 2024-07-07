@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandrayan</title>
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    *{
+      margin: 10px;
+    }
+    img
+    {
+      height:500px;
+      width:98%;
+    }
+
+    #main_div{
+      display: flex;      
+      justify-content: center;
+      text-align: center;
+    }
+
+    #main_div img{
+      height: 40vh;
+      width: 20vw;
+    }
+
+    #p1, #p2, #p3{
+      width: 20vw;
+    }
+
+
+    @media only screen and (max-width: 750px){
+      #main_div{
+        display: flex;
+        flex-direction: column;
+      }
+
+      #main_div img{
+        height: 70vh;
+        width: 65vw;
+      }
+
+      #p1, #p2, #p3{
+        width: 65vw;
+        margin: 0 auto;
+      }
+    }
+
+  </style>
+
+
+  <script>
+    // function changeImage() {
+    //   var d1 = document.getElementById('div1');
+    //   var para1 = document.getElementById('p1');
+    //   if (para1.style.visibility = "hidden") {
+    //     para1.style.visibility = "visible";
+    //   }
+    //   else {
+    //     para1.style.visibility = "hidden";
+    //   }
+    // }
+    // function changeImage2() {
+    //   var d2 = document.getElementById('div2');
+    //   var para2 = document.getElementById('p2');
+    //   if (para2.style.visibility = "hidden") {
+    //     para2.style.visibility = "visible";
+    //   }
+    //   else {
+    //     para2.style.visibility = "hidden";
+    //   }
+    // }
+    // function changeImage3() {
+    //   var d3 = document.getElementById('div3');
+    //   var para3 = document.getElementById('p3');
+    //   if (para3.style.visibility = "hidden") {
+    //     para3.style.visibility = "visible";
+    //   }
+    //   else {
+    //     para3.style.visibility = "hidden";
+    //   }
+    // }
+
+    function toggleVisibility(paraId) {
+      var para = document.getElementById(paraId);
+      if (para.style.visibility === "hidden") {
+        para.style.visibility = "visible";
+      } else {
+        para.style.visibility = "hidden";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main_div" class="container">
+
+
+    <div id="div1" class="col-sm-4">
+      <!-- <img id="yaan1" onclick="changeImage1()" src="chandrayaan1.jpg"> -->
+      <img id="yaan1" onclick="toggleVisibility('p1')" src="chandrayaan1.jpg" alt="Chandrayaan-1">
+      <table class="table" id="p1" style="visibility: hidden; background-color: #f8f9fa;">
+
+        <tr>
+          <th style="color:red;" class="text-center" colspan="2">Chandrayaan-1</th>
+        </tr>
+
+        <tr>
+          <th>Mission type</th>
+          <td>Lunar orbiter</td>
+        </tr>
+
+        <tr>
+          <th>Operator</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th>COSPAR ID</th>
+          <td>2008-052A</td>
+        </tr>
+
+        <tr>
+          <th>SATCAT no.</th>
+          <td>22405</td>
+        </tr>
+
+        <tr>
+          <th>Mission Duration</th>
+          <td>Planned: 2 years<br>Final:10 months, 6 days</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Spacecraft properties</th>
+        </tr>
+
+        <tr>
+          <th>Manufacturer</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th>Launch mass</th>
+          <td>1,380 kg (3,040 lb)</td>
+        </tr>
+
+        <tr>
+          <th>Dry mass</th>
+          <td>560 kg (1,230 lb)</td>
+        </tr>
+
+        <tr>
+          <th>Payload mass</th>
+          <td>105 kg (231 lb)</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Start of mission</th>
+        </tr>
+
+        <tr>
+          <th>Launch date</th>
+          <td>22 October 2008, 00:52 UTC</td>
+        </tr>
+
+        <tr>
+          <th>Rocket</th>
+          <td>PSLV-XL C11</td>
+        </tr>
+
+        <tr>
+          <th>Launch site</th>
+          <td>Satish Dhawan Space Centre</td>
+        </tr>
+
+        <tr>
+          <th>Contractor</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">End of mission</th>
+        </tr>
+
+        <tr>
+          <th>Last contact</th>
+          <td>28 August 2009, 20:00 UTC</td>
+        </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <div id="div2" class="col-sm-4">
+      <img id="yaan2" onclick="toggleVisibility('p2')" src="chandrayaan2.jpg" alt="Chandrayaan-2">
+      <table class="table" id="p2" style="visibility: hidden; background-color: #f8f9fa;">
+
+        <tr>
+          <th style="color:red;" class="text-center" colspan="2">Chandrayaan-2</th>
+        </tr>
+
+        <tr>
+          <th>Mission type</th>
+          <td>Orbiter • Lander • Rover</td>
+        </tr>
+
+        <tr>
+          <th>Operator</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th>COSPAR ID</th>
+          <td>2019-042A</td>
+        </tr>
+
+        <tr>
+          <th>SATCAT no.</th>
+          <td>44441</td>
+        </tr>
+
+        <tr>
+          <th>Mission Duration</th>
+          <td>
+            <ul>
+              <li>Orbiter: ~ 7.5 years (planned);
+                3 years, 11 months, 24 days (elapsed)</li>
+              <li>Vikram lander: ≤ 14 days (planned);</li>
+              <li>Pragyan rover: ≤ 14 days (planned);
+                0 days (not deployed)</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Spacecraft properties</th>
+        </tr>
+
+        <tr>
+          <th>Manufacturer</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th>Launch mass</th>
+          <td>Combined (wet): 3,850 kg (8,490 lb)<br>
+            Combined (dry): 1,308 kg (2,884 lb)<br>
+            Orbiter (wet): 2,379 kg (5,245 lb)<br>
+            Orbiter (dry): 682 kg (1,504 lb)<br>
+            Vikram lander (wet): 1,471 kg (3,243 lb)<br>
+            Vikram lander (dry): 626 kg (1,380 lb)<br>
+            Pragyan rover: 27 kg (60 lb)</td>
+        </tr>
+
+        <tr>
+          <th>Power</th>
+          <td> Orbiter: 1000 watts <br>
+            Vikram lander: 650 watts <br>
+            Pragyan rover: 50 watts</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Start of mission</th>
+        </tr>
+
+        <tr>
+          <th>Launch date</th>
+          <td>22 July 2019, 09:13:12 UTC</td>
+        </tr>
+
+        <tr>
+          <th>Rocket</th>
+          <td>LVM3 M1</td>
+        </tr>
+
+        <tr>
+          <th>Launch site</th>
+          <td> Satish Dhawan Space Centre Second Launch Pad</td>
+        </tr>
+
+        <tr>
+          <th>Contractor</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Lunar orbiter</th>
+        </tr>
+
+        <tr>
+          <th>Orbital insertion</th>
+          <td>20 August 2019, 03:32 UTC</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Lunar lander</th>
+        </tr>
+
+        <tr>
+          <th>Spacecraft</th>
+          <td>Rover</td>
+        </tr>
+
+        <tr>
+          <th>Component</th>
+        </tr>
+
+        <tr>
+          <th>Landing date</th>
+          <td>6 September 2019, 20:23 UTC</td>
+        </tr>
+
+        <tr>
+          <th>Landing site</th>
+          <td> Far side of the Moon (intended) <br>
+            Tiranga Point 70.8810°S 22.7840°E <br>
+            (between Manzinus C and Simpelius N craters) (crash site)
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+
+
+
+    <div id="div3" class="col-sm-4">
+      <img id="yaan3" onclick="toggleVisibility('p3')" src="chandrayaan3.jpg" alt="Chandrayaan-3">
+      <table class="table" id="p3" style="visibility: hidden; background-color: #f8f9fa;">
+
+        <tr>
+          <th style="color:red;" class="text-center" colspan="2">Chandrayaan-3</th>
+        </tr>
+
+        <tr>
+          <th>Mission type</th>
+          <td>Lander • Rover</td>
+        </tr>
+
+        <tr>
+          <th>Operator</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th>COSPAR ID</th>
+          <td>2023-098B</td>
+        </tr>
+
+        <tr>
+          <th>SATCAT no.</th>
+          <td>57320</td>
+        </tr>
+
+        <tr>
+          <th>Mission Duration</th>
+          <td>1 month and 12 days (elapsed)
+            <ul>
+              <li>Propulsion module: ≤ 3 to 6 months (planned) 21 days (elapsed) (since orbit insertion)</li>
+              <li>Vikram lander: ≤ 14 days (planned) 3 days (elapsed) (since landing)</li>
+              <li>Pragyan rover: ≤ 14 days (planned) 3 days (elapsed) (since deployment)</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Spacecraft properties</th>
+        </tr>
+
+        <tr>
+          <th>Bus</th>
+          <td>Chandrayaan</td>
+        </tr>
+
+        <tr>
+          <th>Manufacturer</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th>Launch mass</th>
+          <td>3,900 kg</td>
+        </tr>
+
+        <tr>
+          <th>Payload mass</th>
+          <td>Propulsion Module: 2148 kg <br>
+            Lander Module (Vikram): 1726 kg <br>
+            Rover (Pragyan) 26 kg <br>
+            Total: 3900 kg</td>
+        </tr>
+
+        <tr>
+          <th>Power</th>
+          <td>Propulsion Module: 758 W <br>
+            Lander Module: 738 W <br>
+            WS with Bias Rover: 50 W</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Start of mission</th>
+        </tr>
+
+        <tr>
+          <th>Launch date</th>
+          <td>14 July 2023 09:05:17 UTC</td>
+        </tr>
+
+        <tr>
+          <th>Rocket</th>
+          <td>LVM3 M4</td>
+        </tr>
+
+        <tr>
+          <th>Launch site</th>
+          <td>Satish Dhawan Space Centre</td>
+        </tr>
+
+        <tr>
+          <th>Contractor</th>
+          <td>ISRO</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Moon orbiter</th>
+        </tr>
+
+        <tr>
+          <th>Orbital insertion</th>
+          <td>5 August 2023</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Moon lander</th>
+        </tr>
+
+        <tr>
+          <th>Spacecraft</th>
+          <td>Vikram lander</td>
+        </tr>
+
+        <tr>
+          <th>Component</th>
+        </tr>
+
+        <tr>
+          <th>Landing date</th>
+          <td>23 August 2023 12:32 UTC</td>
+        </tr>
+
+        <tr>
+          <th>Landing site</th>
+          <td>Shivshakti Point <br>
+            69.367621°S 32.348126°E <br>
+            (between Manzinus C and Simpelius N craters)</td>
+        </tr>
+
+        <tr>
+          <th style="background-color: #DDDDFF;" colspan="2" class="text-center">Moon rover</th>
+        </tr>
+
+        <tr>
+          <th>Landing date</th>
+          <td>23 August 2023</td>
+        </tr>
+
+      </table>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
